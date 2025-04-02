@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> 
+
+   
+
+    <title>Habiba Akter Urmi - Portfolio</title>
+    <script
+      src="https://kit.fontawesome.com/c2f6adfdd8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        
+        <img src="images/Logo.png" alt="My Logo" class="logo" />
+        <ul id="sidemenu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          <button id="theme-toggle">Dark 🌙</button>
+      </nav>
+      
+    </header>
+
+    <section class="hero-content">
+      <img src="images/Hero_img.jpeg" alt="Hero Image" class="hero-img" />
+      <div class="text-block"><h1>Hi, I am Habiba!</h1>
+      <p class="hero-text">A Full-Stack Web Developer</p>
+    </div>
+    </section>
+    <!--    ---------about----------- -->
+      
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Images/my_image.jpeg" alt="profile" />
+          </div>
+          <div class="about-col-2">
+            <h2 class="sub-title">About Me</h2>
+            <p>
+              I am Habiba Akter Urmi, a skilled full-stack web developer focused on building efficient and innovative web applications. I have a solid foundation in HTML, CSS, and JavaScript, allowing me to create dynamic and responsive user experiences. I thrive on turning ideas into reality, ensuring that my projects are not only visually appealing but also functional and user-centric. My commitment to continuous learning drives me to stay updated with the latest technologies and best practices in the industry.
+            </p>
+            <div class="tab-titles">
+              <p
+                class="tab-links active-link"
+                onclick="opentab('skills', event)"
+              >
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience', event)">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education', event)">
+                Education
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Design</span><br />UI/UX interface</li>
+                <li>
+                  <span>Web Development</span><br />
+                  Front-end & Back-end
+                </li>
+                <li>
+                  <span>App Development</span><br />Building mobile apps
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2025 - Current</span><br />Full Stack Web Developer Training
+                 
+                </li>
+                <li>
+                  <span>2019 - 2023</span><br />Business administration and Logistics
+                </li>
+                <li>
+                  <span>2016 - 2018</span><br />
+                  Digital Marketing
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2020</span><br />Udemy Courses</li>
+                <li>
+                  <span>2023</span><br />Metropolia University of Applied Sciences
+                </li>
+                <li>
+                  <span>2015 - 2017</span><br />
+                  Higher Secondary education
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- ------------------Services----------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+              ipsam totam iure quibusdam repudiandae asperiores quo, doloremque
+              rem odio aut sint expedita cumque perferendis ipsa laudantium
+              consequatur placeat nobis architecto!
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+              ipsam totam iure quibusdam repudiandae asperiores quo, doloremque
+              rem odio aut sint expedita cumque perferendis ipsa laudantium
+              consequatur placeat nobis architecto!
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <i class="fa-brands fa-google-play"></i>
+            <h2>App Development</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+              ipsam totam iure quibusdam repudiandae asperiores quo, doloremque
+              rem odio aut sint expedita cumque perferendis ipsa laudantium
+              consequatur placeat nobis architecto!
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------------Portfolio--------------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">Portfolio</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="Images/Pancake Maker App.png" alt="Pancake Maker App" />
+            <div class="layer">
+              <h3>Pancake Maker App</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                voluptatibus quisquam, totam eaque alias inventore vero adipisci
+                enim reprehenderit, necessitatibus dolorum deserunt. Commodi
+                laboriosam earum, aperiam atque temporibus veniam magnam.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/Sign Up Form.png" alt="Sign Up_Form" />
+            <div class="layer">
+              <h3>Sign Up_Form</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                voluptatibus quisquam, totam eaque alias inventore vero adipisci
+                enim reprehenderit, necessitatibus dolorum deserunt. Commodi
+                laboriosam earum, aperiam atque temporibus veniam magnam.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/Little Zoo.png" alt="Little Zoo" />
+            <div class="layer">
+              <h3>Little Zoo</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                voluptatibus quisquam, totam eaque alias inventore vero adipisci
+                enim reprehenderit, necessitatibus dolorum deserunt. Commodi
+                laboriosam earum, aperiam atque temporibus veniam magnam.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <button class="modalBtn">See more</button>
+        <div id="modalBox" class="modal">
+          <div class ="modal-content">
+            <span class ="close"> &times;</span>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--  ------------Contact------------ -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>urmiinnah@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>+358 452033730</p>
+            <div class="social-icons">
+              <a href="https://github.com/HabibaUrmi">
+                <i class="fa-brands fa-github" style="color: #0053bf"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/habibaurmi/"
+                ><i class="fa-brands fa-linkedin" style="color: #17a2de"></i
+              ></a>
+              <a
+                href="https://wa.me/+358452033730"
+          "
+                ><i
+                  class="fa-brands fa-square-whatsapp"
+                  style="color: #25d366"
+                ></i
+              ></a>
+            </div>
+            <a href="Images/Habiba_Urmi_CV.png" download class="btn"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button class="btn btn2" type="submit">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+      <footer>
+        <div class="copyright">
+          <p>2025 <i class="fa-regular fa-copyright"></i> Habiba Akter Urmi</p>
+          <nav>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+       
+        <button id="backToTopBtn" class="hidden" >
+          <i class="fa-solid fa-circle-up"></i>
+        </button>
+        
+      </div>
+       
+  
+        </footer>
+   
+    <script src="main.js"></script>
+  </body>
+</html>
