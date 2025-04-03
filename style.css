@@ -345,15 +345,20 @@ nav ul li a:hover::after {
   display: flex;
   flex-direction: center;
   margin: 50px auto;
-  padding: 14px 20px;
+  padding: 10px 20px;
   width: fit-content;
-  font-size: 20px;
+  font-size: 15px;
   border: 1px solid #ebb641;
   border-radius: 6px;
   text-decoration: none;
   color: white;
   background-color: #dfa20a;
   transition: background 0.5s;
+}
+.modalBtn:hover {
+  color: #040404;
+  background-color: #cdba41;
+  cursor: pointer;
 }
 .modal {
   display: none; /* Hidden by default */
@@ -372,11 +377,12 @@ nav ul li a:hover::after {
 .modal-content {
   background-color: #fefefe;
   color: black;
-  margin: 10% auto; /* 10% from the top and centered */
+  margin: 10% auto;
   padding: 50px;
   border: 1px solid #888;
+  border-radius: 2px;
   width: 30%;
-  height: 30%; /* Could be more or less, depending on screen size */
+  height: 30%;
 }
 
 /* The Close Button */

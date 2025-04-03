@@ -22,28 +22,26 @@ document.addEventListener("DOMContentLoaded", function () {
   scrollFunction();
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  // Get modal elements
-  const modal = document.getElementById("modalBox");
-  const btn = document.querySelector(".modalBtn");
-  const closeBtn = document.querySelector(".close");
+// Get modal elements
+const modal = document.getElementById("modalBox");
+const btn = document.querySelector(".modalBtn");
+const closeBtn = document.querySelector(".close");
 
-  // Open modal when button is clicked
-  btn.addEventListener("click", function () {
-    modal.style.display = "block";
-  });
+// Open modal when button is clicked
+btn.addEventListener("click", function () {
+  modal.style.display = "block";
+});
 
-  // Close modal when close button (×) is clicked
-  closeBtn.addEventListener("click", function () {
+// Close modal when close button (×) is clicked
+closeBtn.addEventListener("click", function () {
+  modal.style.display = "none";
+});
+
+// Close modal when clicking outside the modal content
+window.addEventListener("click", function (event) {
+  if (event.target === modal) {
     modal.style.display = "none";
-  });
-
-  // Close modal when clicking outside the modal content
-  window.addEventListener("click", function (event) {
-    if (event.target === modal) {
-      modal.style.display = "none";
-    }
-  });
+  }
 });
 
 const themeToggle = document.getElementById("theme-toggle");

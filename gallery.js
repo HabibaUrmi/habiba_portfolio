@@ -1,4 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Smooth scrolling for navbar links
+  document.querySelectorAll("nav a").forEach((link) => {
+    link.addEventListener("click", (event) => {
+      const targetId = link.getAttribute("href");
+      const targetSection = document.querySelector(targetId);
+
+      if (targetSection) {
+        event.preventDefault(); // Prevent default anchor behavior
+        targetSection.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  });
+
+  // Gallery lightbox functionality
   const images = document.querySelectorAll(".gallery_grid img");
 
   images.forEach((image) => {
