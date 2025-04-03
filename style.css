@@ -794,7 +794,7 @@ nav .fa-solid {
   }
 
   .text-block {
-    width: 95%;
+    width: 90%;
     padding: 8px;
   }
 
@@ -813,4 +813,25 @@ nav .fa-solid {
   .fa-xmark {
     font-size: 20px;
   }
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  position: relative;
+}
+
+#theme-toggle {
+  padding: 10px 10px;
+  font-size: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+  margin: 0 auto;
 }
